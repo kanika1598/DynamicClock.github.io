@@ -1,0 +1,57 @@
+<html>
+   <head>
+       <title>Dynamic Clock</title>
+   </head>
+   
+   <style>
+       #clock_p{
+           font-size: 100px;
+           text-align: center;
+       }
+       .heading
+       {
+           text-align: center;
+           font-family: comicsans;
+           font-size: 120px;
+       }
+       .btn
+       {
+           margin-left: 400px;
+           width: 500px;
+           height: 125px;
+           border-radius: 10px;
+           background-color: green;
+           color: white;
+           font-size: 30px;
+           
+       }
+       
+       
+   </style>
+   
+   <body>
+       <h1 class="heading">Dynamic Clock in HTML</h1>
+       <p id="clock_p"></p>
+       <button class="btn" onClick="clearInterval(clock)">Click to Stop the Watch!</button>
+       
+       
+<script>
+    var clock=setInterval(dynamic_clock, 1000);
+    
+    function dynamic_clock()
+    {
+       var date=new Date();
+       var date=date.toLocaleString();
+       document.getElementById("clock_p").innerHTML=date;
+    }
+    function clear_time()
+    {
+        v
+    }
+</script>
+  
+  
+  </body>
+   
+    
+</html>
